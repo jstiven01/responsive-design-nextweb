@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 a {
   text-decoration: none;
   margin: 0;
@@ -17,8 +21,18 @@ video {
   max-width: 100%;
 }
 
+ol,
+ul {
+  list-style: none;
+}
+
 .nav {
   height: 48px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
 }
 
 .nav-logo > a {
@@ -36,4 +50,73 @@ video {
   height: 16px;
   width: 66px;
   z-index: 999;
+}
+
+.more-tnw-links {
+  display: none;
+}
+
+.company-links {
+  display: none;
+}
+
+.nav-no-mob {
+  display: none;
+}
+
+.icon {
+  display: block;
+  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') no-repeat;
+  background-size: 1296px 1296px;
+  background-position: 1296px 1296px;
+  width: 16px;
+  height: 16px;
+}
+
+.search-icon {
+  background-position: -832px -832px;
+}
+
+.nav-mob {
+  display: flex;
+}
+
+.nav-mob > li {
+  border-left: 1px solid #eee;
+}
+
+.nav-mob > li > a {
+  display: block;
+  height: 48px;
+  padding: 16px;
+  width: 48px;
+}
+
+.toggle-icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-mob-toggle > div > span {
+  background-color: #f42;
+  height: 2px;
+  width: 16px;
+  margin: 2px 0 2px;
+}
+.nav-mob-toggle > div > span:first-child {
+  margin: 0 0 2px;
+}
+
+.wrapper-top-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-navbar-hardfork > div {
+  box-shadow: 0 16px 48px rgba(0,0,0,.15);
+  line-height: 30px;
+  background: #fd3;
+  font-size: 10px;
+  color: #000;
+  text-align: center;
 }
