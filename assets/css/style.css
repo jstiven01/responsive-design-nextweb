@@ -37,7 +37,6 @@ ul {
 
 .nav-logo > a {
   z-index: 2;
-  background-color: #f42;
   background: linear-gradient(to bottom right, #c09, #f42 85%);
   display: block;
   height: 48px;
@@ -117,13 +116,13 @@ ul {
   white-space: nowrap;
 }
 
-@media only screen and (min-width : 480px) {
+@media only screen and (min-width: 480px) {
   .link-navbar-hardfork > div {
     font-size: 13px;
   }
 }
 
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width: 768px) {
   .wrapper-top-nav {
     justify-content: flex-start;
   }
@@ -149,10 +148,6 @@ ul {
     display: none;
   }
 
-  .more-tnw-links {
-    display: flex;
-  }
-
   .nav-no-mob {
     display: flex;
     height: 100%;
@@ -172,6 +167,10 @@ ul {
     margin-left: 20px;
   }
 
+  .more-tnw-links li:first-child > a {
+    color:  #fff;
+  }
+
   .more-tnw-links > li {
     margin-left: 12px;
   }
@@ -180,13 +179,13 @@ ul {
     color: hsla(0, 0%, 100%, 0.6);
   }
 
-  .more-tnw-links li:first-child > a {
-    color:  #fff;
-  }
-
   .additional-topics-links {
     display: flex;
     justify-content: space-between;
+  }
+
+  .nav-no-mob > li:first-child a {
+    padding-left: 20px;
   }
 
   .nav-no-mob > li > a {
@@ -196,13 +195,9 @@ ul {
     display: block;
     height: 48px;
     padding: 18px 10px 0;
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
     line-height: 1;
     font-size: 12.5px;
-  }
-
-  .nav-no-mob > li:first-child a {
-    padding-left: 20px;
   }
 
   .search-icon-no-mob {
@@ -214,5 +209,4 @@ ul {
     padding-left: 126px;
     text-align: left;
   }
-
 }
