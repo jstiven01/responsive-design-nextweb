@@ -38,7 +38,7 @@ ul {
 .nav-logo > a {
   z-index: 2;
   background-color: #f42;
-  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
   display: block;
   height: 48px;
   padding: 16px 20px;
@@ -52,15 +52,7 @@ ul {
   z-index: 999;
 }
 
-.more-tnw-links {
-  display: none;
-}
-
-.company-links {
-  display: none;
-}
-
-.nav-no-mob {
+.links-navbar-no-mob {
   display: none;
 }
 
@@ -103,6 +95,7 @@ ul {
   width: 16px;
   margin: 2px 0 2px;
 }
+
 .nav-mob-toggle > div > span:first-child {
   margin: 0 0 2px;
 }
@@ -113,10 +106,113 @@ ul {
 }
 
 .link-navbar-hardfork > div {
-  box-shadow: 0 16px 48px rgba(0,0,0,.15);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
   line-height: 30px;
   background: #fd3;
   font-size: 10px;
   color: #000;
   text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media only screen and (min-width : 480px) {
+  .link-navbar-hardfork > div {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .wrapper-top-nav {
+    justify-content: flex-start;
+  }
+  
+  .nav-logo > a {
+    height: 80px;
+  }
+
+  .nav-logo > a > img {
+    transform: translateY(16px);
+  }
+
+  .nav-mob {
+    display: none;
+  }
+
+  .links-navbar-no-mob {
+    display: unset;
+    width: 100%;
+  }
+
+  .company-links {
+    display: none;
+  }
+
+  .more-tnw-links {
+    display: flex;
+  }
+
+  .nav-no-mob {
+    display: flex;
+    height: 100%;
+  }
+
+  .more-tnw-links {
+    max-height: 32px;
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 32px;
+    background: #131313;
+    z-index: 2;
+  }
+
+  .more-tnw-links > li:first-child {
+    margin-left: 20px;
+  }
+
+  .more-tnw-links > li {
+    margin-left: 12px;
+  }
+
+  .more-tnw-links > li > a {
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+
+  .more-tnw-links li:first-child > a {
+    color:  #fff;
+  }
+
+  .additional-topics-links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-no-mob > li > a {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #aaa;
+    display: block;
+    height: 48px;
+    padding: 18px 10px 0;
+    letter-spacing: .04em;
+    line-height: 1;
+    font-size: 12.5px;
+  }
+
+  .nav-no-mob > li:first-child a {
+    padding-left: 20px;
+  }
+
+  .search-icon-no-mob {
+    padding: 18px 20px 0;
+    border-left: 1px solid #eee;
+  }
+
+  .link-navbar-hardfork > div {
+    padding-left: 126px;
+    text-align: left;
+  }
+
 }
