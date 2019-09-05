@@ -123,11 +123,10 @@ ul {
 }
 
 @media only screen and (min-width: 768px) {
-  
   .wrapper-top-nav {
     justify-content: flex-start;
   }
-  
+
   .nav-logo > a {
     height: 80px;
   }
@@ -154,11 +153,19 @@ ul {
     height: 100%;
   }
 
+  .more-tnw-links > li {
+    margin-left: 12px;
+  }
+
   .more-tnw-links > li:first-child {
     margin-left: 20px;
   }
 
-  .more-tnw-links li:first-child > a {
+  .more-tnw-links > li > a {
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+
+  .more-tnw-links > li:first-child > a {
     color: #fff;
   }
 
@@ -170,14 +177,6 @@ ul {
     line-height: 32px;
     background: #131313;
     z-index: 2;
-  }
-
-  .more-tnw-links > li {
-    margin-left: 12px;
-  }
-
-  .more-tnw-links > li > a {
-    color: hsla(0, 0%, 100%, 0.6);
   }
 
   .additional-topics-links {
