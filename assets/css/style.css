@@ -6,6 +6,10 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: #555;
+  line-height: 1.5;
+  min-height: 100vh;
+  font-size: 14px;
 }
 
 a {
@@ -26,6 +30,10 @@ ul {
   list-style: none;
 }
 
+main {
+  height:100vh;
+}
+
 .nav {
   height: 48px;
   position: fixed;
@@ -33,6 +41,8 @@ ul {
   right: 0;
   top: 0;
   z-index: 10;
+  background: #fff;
+  box-shadow: 0 0 32px rgba(0,0,0,.15);
 }
 
 .nav-logo > a {
@@ -159,6 +169,14 @@ ul {
   margin: 0 3px;
 }
 
+.footer-links-social {
+  margin-bottom: 1.5em;
+}
+
+.footer-links-company > li > a {
+  color: #aaa;
+}
+
 .footer-links-company > li {
   font-weight: 500;
   text-transform: uppercase;
@@ -169,9 +187,43 @@ ul {
 }
 
 .wrapper-links-social {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.footer-links {
+  background: #131313;
+  padding: 2.5em 0;
+}
+
+.footer-legal {
+  background: #000;
+  color: #aaa;
+  font-size: 13px;
+  padding: 2.5em 0;
+}
+
+.footer-logos {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+  vertical-align: baseline;
+}
+
+.wrapper-legal > span {
+  display: block;
+}
+
+.wrapper-legal > span > b {
+  color:#f42;
+}
+
+.wrapper-legal {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 480px) {
@@ -266,6 +318,26 @@ ul {
   .link-navbar-hardfork > div {
     padding-left: 126px;
     text-align: left;
+  }
+
+  .wrapper-legal > span {
+    display: inline;
+  }
+
+  .footer-legal {
+    padding: 3em 0;
+  }
+
+  .footer-links {
+    padding: 3em 0 2em;
+  }
+
+  .footer-links-social > li {
+    margin: 0 8px;
+  }
+
+  .footer-links-company > li {
+    margin: 0 6px;
   }
 }
 
