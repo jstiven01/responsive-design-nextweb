@@ -116,6 +116,64 @@ ul {
   white-space: nowrap;
 }
 
+.facebook-icon {
+  background-position: -272px -272px;
+}
+
+.twitter-icon {
+  background-position: -1024px -1024px;
+}
+
+.youtube-icon {
+  background-position: -1280px -1280px;
+}
+
+.instagram-icon {
+  background-position: -416px -416px;
+}
+
+.pinterest-icon {
+  background-position: -672px -672px;
+}
+
+.rss-icon {
+  background-position: -816px -816px;
+}
+
+.mail-icon {
+  background-position: -576px -576px;
+}
+
+.footer-links-social > li > a {
+  background: #333;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  padding: 12px;
+  text-align: center;
+  width: 40px;
+}
+
+.footer-links-social > li {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.footer-links-company > li {
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0 4px;
+}
+
+.wrapper-links-social {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media only screen and (min-width: 480px) {
   .link-navbar-hardfork > div {
     font-size: 13px;
@@ -165,6 +223,18 @@ ul {
     color: hsla(0, 0%, 100%, 0.6);
   }
 
+  .nav-no-mob > li > a {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #aaa;
+    display: block;
+    height: 48px;
+    padding: 18px 10px 0;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    font-size: 12.5px;
+  }
+
   .more-tnw-links > li:first-child > a {
     color: #fff;
   }
@@ -182,18 +252,6 @@ ul {
   .additional-topics-links {
     display: flex;
     justify-content: space-between;
-  }
-
-  .nav-no-mob > li > a {
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #aaa;
-    display: block;
-    height: 48px;
-    padding: 18px 10px 0;
-    letter-spacing: 0.04em;
-    line-height: 1;
-    font-size: 12.5px;
   }
 
   .nav-no-mob > li:first-child a {
