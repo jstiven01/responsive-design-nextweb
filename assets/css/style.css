@@ -31,7 +31,7 @@ ul {
 }
 
 main {
-  height:100vh;
+  height: 100vh;
 }
 
 .nav {
@@ -42,7 +42,7 @@ main {
   top: 0;
   z-index: 10;
   background: #fff;
-  box-shadow: 0 0 32px rgba(0,0,0,.15);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
 }
 
 .nav-logo > a {
@@ -96,6 +96,10 @@ main {
 .toggle-icon {
   display: flex;
   flex-direction: column;
+}
+
+.wrapper-legal > span {
+  display: block;
 }
 
 .nav-mob-toggle > div > span {
@@ -211,12 +215,8 @@ main {
   vertical-align: baseline;
 }
 
-.wrapper-legal > span {
-  display: block;
-}
-
 .wrapper-legal > span > b {
-  color:#f42;
+  color: #f42;
 }
 
 .wrapper-legal {
@@ -261,6 +261,14 @@ main {
   .nav-no-mob {
     display: flex;
     height: 100%;
+  }
+  
+  .footer-links-social > li {
+    margin: 0 8px;
+  }
+
+  .footer-links-company > li {
+    margin: 0 6px;
   }
 
   .more-tnw-links > li {
@@ -330,14 +338,6 @@ main {
 
   .footer-links {
     padding: 3em 0 2em;
-  }
-
-  .footer-links-social > li {
-    margin: 0 8px;
-  }
-
-  .footer-links-company > li {
-    margin: 0 6px;
   }
 }
 
