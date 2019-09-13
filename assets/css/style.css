@@ -71,7 +71,7 @@ ul {
 }
 
 main {
-  height: 100vh;
+  height: auto;
   padding-top: 104px;
 }
 
@@ -293,6 +293,36 @@ main {
 
 #background-latest-8 {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Snag_3e3a4e3-504x270.png');
+}
+
+.latest {
+  margin-bottom: 2em;
+  padding-top: 24px;
+}
+
+.subtitle-text {
+  margin-bottom: 24px;
+  line-height: 1.1;
+  font-size: 28px;
+  letter-spacing: -.015em;
+}
+
+.subtitle-text > a {
+  color: #f42;
+  font-weight: 700;
+}
+
+.group-news {
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
+  margin: -8px;
+}
+
+.wrapper-outside {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
 }
 
 /*
