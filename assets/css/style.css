@@ -32,6 +32,8 @@
     8.4 Footer
 */
 
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap'); /* font-family: 'Paytone One', sans-serif; */
+
 /*
 ------------------------
      1  General
@@ -85,6 +87,23 @@ main {
   position: relative;
   float: left;
   width: 100%;
+}
+
+.icon {
+  display: block;
+  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) no-repeat;
+  background-size: 1296px 1296px;
+  background-position: 1296px 1296px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon.icon--share--light {
+  background-position: -912px -912px;
+}
+
+.icon.icon--clock--light {
+  background-position: -160px -160px;
 }
 
 /*
@@ -206,7 +225,45 @@ main {
 }
 
 .main-section article header {
-    margin-top: -10vh;
+  position: absolute;
+  padding-left: 10px;
+  bottom: 10px;
+  color:white;
+}
+
+.main-section article header h2 {
+  color: white;
+  font-family: 'Paytone One', sans-serif;
+}
+
+.main-article-wrapper header h2 {
+  font-size: 20px;
+}
+
+.main-section article header h5 {
+  color:white;
+  font-size: 14px;
+}
+
+.main-section article header ul {
+  font-size: 12px;
+  display: flex;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-section article header ul a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-section article header ul a:hover {
+  color: white;
+}
+
+.main-section article header i {
+  display: inline-block;
+  margin: 0 2px 0 6px;
+  vertical-align: middle;
+  opacity: 0.6;
 }
 
 .main-article {
@@ -258,9 +315,25 @@ main {
 
 .main-date {
   position: absolute;
+  display: none;
   top: 16px;
   right: 24px;
   color: white;
+}
+
+.cover-logo {
+  display: none;
+  position: absolute;
+  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg) no-repeat;
+  background-size: contain;
+  left: 24px;
+  width: 50%;
+  height: 100%;
+  max-height: 112px;
+  line-height: 1;
+  top: 24px;
+  pointer-events: none;
+  text-align: right;
 }
 
 #background-latest-1 {
@@ -328,7 +401,7 @@ main {
 .group-news > li {
   flex-basis: 100%;
   max-width: 100%;
-  padding: 8px;  
+  padding: 8px;
 }
 
 .div-story {
@@ -629,6 +702,10 @@ main {
   .footer-links {
     padding: 3em 0 2em;
   }
+
+  .main-article-wrapper header h2 {
+    font-size: 36px;
+  }
 }
 
 /*
@@ -693,6 +770,18 @@ main {
 
   .main-article-wrapper .cover-trigger {
     margin-top: -59vh;
+  }
+
+  .cover-logo {
+    display: block;
+  }
+
+  .main-article-wrapper header h2 {
+    font-size: 46px;
+  }
+
+  .main-date {
+    display: block;
   }
 
 }
