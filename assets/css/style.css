@@ -229,6 +229,26 @@ main {
   width: 100%;
   height: 100%;
 }
+.cover-trigger {
+  background: rgba(0,0,0,.25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  margin-top: -29vh;
+}
+
+.cover-gradient {
+  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png) no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  display: none;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  margin-top: -60vh;
+}
 
 #background-latest-1 {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/sale_21924_primary_image_wide-540x270.jpg');
@@ -366,7 +386,7 @@ main {
 
 /*
 ------------------------
-     5 MD
+     5 SM
 ------------------------
 */
 
@@ -437,6 +457,14 @@ main {
 
   .main-section .col-md-8 {
     height: 100%;
+  }
+
+  .cover-trigger {
+    margin-top: -24vh;
+  }
+
+  .main-article-wrapper .cover-trigger {
+    margin-top: -49vh;
   }
 
   /* 6.4 Footer */
@@ -570,6 +598,19 @@ main {
   .main-section article:nth-last-child(2) {
     height: 30vh;
   }
+
+  .cover-gradient {
+    display: block;
+  }
+
+  .cover-trigger {
+    margin-top: -29vh;
+  }
+
+  .main-article-wrapper .cover-trigger {
+    margin-top: -59vh;
+  }
+
 }
 
 /*
