@@ -834,6 +834,25 @@ main {
     display: block;
   }
 
+  .group-news {
+    margin: -12px;
+    font-size: 16px;
+  }
+  
+  .group-news > li {
+    flex-basis: 25%;
+    max-width: 25%;
+    padding: 12px;
+  }
+  
+  .text-flex > h4 > a {
+    font-size : 16px;
+  }
+
+  .text-flex > ul {
+    font-size: 13px;
+  }
+
 }
 
 /*
