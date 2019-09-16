@@ -106,6 +106,10 @@ main {
   background-position: -160px -160px;
 }
 
+.icon--briefcase--dark {
+    background-position: -48px -48px;
+}
+
 /*
 ------------------------
       2 Header
@@ -143,17 +147,12 @@ main {
   display: none;
 }
 
-.icon {
-  display: block;
-  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') no-repeat;
-  background-size: 1296px 1296px;
-  background-position: 1296px 1296px;
-  width: 16px;
-  height: 16px;
-}
-
 .search-icon {
   background-position: -832px -832px;
+}
+
+.icon--tag--dark {
+    background-position: -976px -976px;
 }
 
 .nav-mob {
