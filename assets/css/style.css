@@ -624,6 +624,28 @@ main {
     margin-top: -49vh;
   }
 
+  .group-news > li {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+    padding: 10px;
+  }
+
+  .div-story {
+    flex-direction: column;
+  }
+
+  .image-flex {
+    width: 100%;
+    height: 0;
+    max-height: 270px;
+    margin-right: 0;
+    display: block;
+  }
+
+  .story-image {
+    width: 100%;
+  }
+
   /* 6.4 Footer */
 
   .footer-links-social > li {
