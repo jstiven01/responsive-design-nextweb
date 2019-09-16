@@ -463,6 +463,88 @@ main {
   text-decoration: none;
 }
 
+.index-co {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-co > div {
+  width: 100%;
+  position: relative;
+  margin: 12px 0;
+  background: #fffaf8;
+}
+
+.index-co > div:nth-last-child(1) {
+  display: none;
+}
+
+.index-co div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10.7px;
+  height: 60px;
+  width: 60px;
+  z-index: 100;
+}
+
+.index-co a > h4 {
+  background: #f42;
+  color: #fff;
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
+  margin: 0;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.index-co div > h4 {
+  font-size: 18px;
+}
+
+.index-co div > h5 {
+  opacity: 0.5;
+  font-size: 11px;
+}
+
+.index-co a > div {
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
+  color: #000;
+  background: rgba(255,68,34,.08);
+  width: 100%;
+  margin: 0;
+}
+
+.index-co ul {
+  margin-top: 0;
+  padding: 16px;
+  border-top: 1px solid rgba(255,68,34,.25);
+}
+
+.index-co ul > li > a > span {
+  color: #aaa;
+}
+
+.invest {
+  padding: 16px;
+  font-size: 13px;
+  width: 100%;
+  color: #555;
+}
+
+.invest a {
+  margin-bottom: .5em;
+  display: flex;
+}
+
+
+.invest a i {
+  margin-right: 10px;
+  display: inline-block;
+}
+
 /*
 ------------------------
       4 Footer
@@ -651,26 +733,39 @@ main {
   .group-news {
     margin: -10px;
   }
-  
+
   .group-news > li {
     flex-basis: 33.3333333333%;
     max-width: 33.3333333333%;
     padding: 10px;
   }
-  
+
   .div-story {
     flex-direction: column;
   }
-  
+
   .story-image {
     width: 100%;
     padding-top: 50%;
   }
-  
+
   .image-flex {
     width: 100%;
     margin-right: 0;
     height: auto;
+  }
+
+  .index-co {
+    flex-direction: row;
+  }
+
+  .index-co > div {
+    width: 33.33333%;
+    margin-right: 24px;
+  }
+
+  .index-co > div:nth-last-child(2) {
+    margin-right: 0;
   }
 
   /* 6.4 Footer */
@@ -838,19 +933,28 @@ main {
     margin: -12px;
     font-size: 16px;
   }
-  
+
   .group-news > li {
     flex-basis: 25%;
     max-width: 25%;
     padding: 12px;
   }
-  
+
   .text-flex > h4 > a {
     font-size : 16px;
   }
 
   .text-flex > ul {
     font-size: 13px;
+  }
+
+  .index-co > div {
+    width: 25%;
+  }
+
+  .index-co > div:nth-last-child(1) {
+    display: block;
+    margin-right: 0;
   }
 
 }
