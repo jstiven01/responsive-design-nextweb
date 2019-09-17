@@ -789,7 +789,7 @@ main {
   }
 
   .index-co > div {
-    width: 33.33333%;
+    width: calc(33.333% - 16px);
     margin-right: 24px;
   }
 
@@ -978,7 +978,7 @@ main {
   }
 
   .index-co > div {
-    width: 25%;
+    width: calc(25% - 18px);
   }
 
   .index-co > div:nth-last-child(1) {
