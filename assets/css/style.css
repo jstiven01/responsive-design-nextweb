@@ -495,6 +495,7 @@ main {
 .index-co {
   display: flex;
   flex-direction: column;
+  margin-bottom: 28px;
 }
 
 .index-co > div {
@@ -1109,6 +1110,7 @@ main {
 
   .index-co {
     flex-direction: row;
+    margin-bottom: 42px;
   }
 
   .index-co > div {
@@ -1325,6 +1327,10 @@ main {
     font-size: 13px;
   }
 
+  .index-co {
+    margin-bottom: 56px;
+  }
+
   .index-co > div {
     width: calc(25% - 18px);
   }
@@ -1353,6 +1359,16 @@ main {
 
   .header-wrapper {
     flex-direction: row;
+  }
+
+  .next-web-sections {
+    margin: -12px -12px 40px -12px;
+  }
+
+  .next-web-sections > section {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+    padding: 12px;
   }
 
 }
