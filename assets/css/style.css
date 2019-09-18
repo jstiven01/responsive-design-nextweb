@@ -574,6 +574,188 @@ main {
   display: inline-block;
 }
 
+.next-web-sections {
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
+  margin: -8px -8px 40px -8px;
+}
+
+.next-web-sections > section {
+  flex-basis: 100%;
+  max-width: 100%;
+  flex: 0 0 auto;
+  padding: 8px;
+  position: relative;
+}
+
+.section-popular {
+  height: 0;
+  padding-top: 75%;
+  position: relative;
+  width: 100%;
+}
+
+.popular-image {
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.popular-gradient {
+  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png') no-repeat;
+  background-size: 100% 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.popular-header {
+  bottom: 0;
+  left: 0;
+  padding: 14px;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+
+.most-popular {
+  color: #fff;
+  font-size: 13px;
+  pointer-events: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1.5;
+}
+
+.popular-headline {
+  margin-bottom: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.popular-headline > a:hover {
+  box-shadow: inset 0 -1px 0 hsla(0,0%,100%,.3);
+}
+
+.popular-author-time {
+  color: hsla(0,0%,100%,.6);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.popular-author-time > li {
+  display: block;
+  float: left;
+}
+
+.popular-author-time > li:first-child::after {
+  content: "\B7";
+  display: block;
+  float: right;
+  margin: 0 4px;
+}
+
+.popular-author-time > li > a {
+  color: hsla(0,0%,100%,.6);
+}
+
+.popular-author-time > li > a:hover {
+  color: #fff;
+}
+
+.latest-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 68, 34, 0.06);
+  margin: 2px 0;
+}
+
+.latest-section-header {
+  flex: 1;
+  overflow: hidden;
+  padding: 10px 14px 0;
+}
+
+.latest-section-header > h5 {
+  color: #f42;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1.5;
+}
+
+.latest-section-header > h4 {
+  max-height: 56px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-size: 14px;
+  color: #f42;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.latest-section-header > h4 > a:hover {
+  box-shadow: inset 0 -1px 0 rgba(255,68,34,.2);
+}
+
+.latest-section-image {
+  flex: 0 0 96px;
+  background-color: #000;
+  background-position: 50%;
+  background-size: cover;
+  height: 96px;
+  width: 96px;
+}
+
+.news-items {
+  border-bottom: 1px solid #eee;
+}
+
+.news-items > h4 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.news-items > h4 > a::before {
+  background-color: #f42;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 13px;
+  width: 4px;
+}
+
+.news-items > h4 > a {
+  display: block;
+  padding: 6px 0 6px 14px;
+  position: relative;
+  color: #555;
+}
+
+.news-items > h4 > a:hover {
+  color: #000;
+}
+
 #background-sections-1 {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Apple-Arcade-1-368x276.jpg');
 }
