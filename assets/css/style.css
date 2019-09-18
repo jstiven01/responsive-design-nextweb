@@ -1120,6 +1120,17 @@ main {
     margin-right: 0;
   }
 
+  .next-web-sections {
+    margin: -10px -10px 40px -10px;
+  }
+
+  .next-web-sections > section {
+    flex-basis: 50%;
+    max-width: 50%;
+    flex: 0 0 auto;
+    padding: 10px;
+    margin-bottom: 24px;
+  }
   /* 6.4 Footer */
 
   .footer-links-social > li {
