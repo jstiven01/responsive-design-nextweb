@@ -149,7 +149,7 @@ main {
 }
 
 .search-icon {
-  background-position: -832px -832px;
+  background-position: -848px -848px;
 }
 
 .icon--tag--dark {
@@ -234,6 +234,7 @@ main {
 
 .main-section article header h2 {
   color: white;
+  cursor: pointer;
   font-family: 'Paytone One', sans-serif;
 }
 
@@ -858,20 +859,42 @@ main {
 
 /* latest-deals */
 
+.latest-deals header {
+  display: flex;
+}
+
+.latest-deals header a {
+  margin-top: 11px;
+  margin-left: auto;
+  color: #f42;
+  text-decoration: none;
+}
+
+.latest-deals header a:hover {
+  color:black;
+}
+
 .latest-deals ul {
   margin:0;
   margin-bottom: 20px;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .latest-deals ul li {
   padding: 8px;
+  position: relative;
   clear: both;
 }
 
 .latest-deals ul li > a {
   width: 75px;
   height: 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 8px;
   margin-right: 16px;
   float: left;
@@ -1133,6 +1156,59 @@ main {
     padding: 10px;
     margin-bottom: 24px;
   }
+
+  .latest-deals header > a {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .latest-deals ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .latest-deals ul li {
+    width: 33.333%;
+  }
+
+  .latest-deals ul li > a {
+    background-position: 0 100%;
+    padding-top: 74.5%;
+    width: 100%;
+  }
+
+  .latest-deals h4 {
+    width: 100%;
+  }
+
+  .discount-tag {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #000;
+    display: block;
+    height: 80px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 80px;
+    z-index: 10;
+  }
+
+  .discount-tag div {
+    transform: rotate(45deg);
+    font-size: 14px;
+    font-weight: 700;
+    left: 8px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+    width: 100%;
+  }
+
   /* 6.4 Footer */
 
   .footer-links-social > li {
@@ -1155,6 +1231,10 @@ main {
     color: hsla(0, 0%, 100%, 0.6);
   }
 
+  .more-tnw-links > li > a:hover {
+    color: white;
+  }
+
   .nav-no-mob > li > a {
     text-transform: uppercase;
     font-weight: 500;
@@ -1165,6 +1245,10 @@ main {
     letter-spacing: 0.04em;
     line-height: 1;
     font-size: 12.5px;
+  }
+
+  .nav-no-mob > li > a:hover {
+    color:black;
   }
 
   .more-tnw-links > li:first-child > a {
@@ -1194,6 +1278,14 @@ main {
   .search-icon-no-mob {
     padding: 18px 20px 0;
     border-left: 1px solid #eee;
+  }
+
+  .search-icon-no-mob a i {
+    opacity: 0.25;
+  }
+
+  .search-icon-no-mob a:hover i {
+    opacity: 0.5;
   }
 
   .link-navbar-hardfork > div {
@@ -1256,6 +1348,10 @@ main {
 
   .company-links > li > a {
     color: hsla(0, 0%, 100%, 0.6);
+  }
+
+  .company-links > li > a:hover {
+    color: white;
   }
 
   .wrapper-black-nav {
@@ -1370,6 +1466,11 @@ main {
     max-width: 33.3333333333%;
     padding: 12px;
   }
+
+  .latest-deals ul li {
+    width: 25%;
+  }
+
 
 }
 
