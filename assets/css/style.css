@@ -108,7 +108,7 @@ main {
 }
 
 .icon--briefcase--dark {
-    background-position: -48px -48px;
+  background-position: -48px -48px;
 }
 
 /*
@@ -153,7 +153,7 @@ main {
 }
 
 .icon--tag--dark {
-    background-position: -976px -976px;
+  background-position: -976px -976px;
 }
 
 .nav-mob {
@@ -229,7 +229,7 @@ main {
   position: absolute;
   padding-left: 10px;
   bottom: 10px;
-  color:white;
+  color: white;
 }
 
 .main-section article header h2 {
@@ -243,7 +243,7 @@ main {
 }
 
 .main-section article header h5 {
-  color:white;
+  color: white;
   font-size: 14px;
 }
 
@@ -294,8 +294,9 @@ main {
   width: 100%;
   height: 100%;
 }
+
 .cover-trigger {
-  background: rgba(0,0,0,.25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
+  background: rgba(0, 0, 0, 0.25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
   background-size: 100% 100%;
   display: block;
   z-index: 2;
@@ -385,7 +386,7 @@ main {
   margin-bottom: 24px;
   line-height: 1.1;
   font-size: 28px;
-  letter-spacing: -.015em;
+  letter-spacing: -0.015em;
 }
 
 .subtitle-text > a {
@@ -543,7 +544,7 @@ main {
 .index-co a > div {
   padding: 10.6666666667px 16px 10.6666666667px 84px;
   color: #000;
-  background: rgba(255,68,34,.08);
+  background: rgba(255, 68, 34, 0.08);
   width: 100%;
   margin: 0;
 }
@@ -551,7 +552,7 @@ main {
 .index-co ul {
   margin-top: 0;
   padding: 16px;
-  border-top: 1px solid rgba(255,68,34,.25);
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
 }
 
 .index-co ul > li > a > span {
@@ -566,10 +567,9 @@ main {
 }
 
 .invest a {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   display: flex;
 }
-
 
 .invest a i {
   margin-right: 10px;
@@ -584,9 +584,8 @@ main {
 }
 
 .next-web-sections > section {
-  flex-basis: 100%;
   max-width: 100%;
-  flex: 0 0 auto;
+  flex: 0 0 100%;
   padding: 8px;
   position: relative;
 }
@@ -636,7 +635,7 @@ main {
   pointer-events: none;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: .04em;
+  letter-spacing: 0.04em;
   line-height: 1.5;
 }
 
@@ -649,11 +648,11 @@ main {
 }
 
 .popular-headline > a:hover {
-  box-shadow: inset 0 -1px 0 hsla(0,0%,100%,.3);
+  box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.3);
 }
 
 .popular-author-time {
-  color: hsla(0,0%,100%,.6);
+  color: hsla(0, 0%, 100%, 0.6);
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -672,7 +671,7 @@ main {
 }
 
 .popular-author-time > li > a {
-  color: hsla(0,0%,100%,.6);
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 .popular-author-time > li > a:hover {
@@ -697,7 +696,7 @@ main {
   font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: .04em;
+  letter-spacing: 0.04em;
   line-height: 1.5;
 }
 
@@ -713,7 +712,7 @@ main {
 }
 
 .latest-section-header > h4 > a:hover {
-  box-shadow: inset 0 -1px 0 rgba(255,68,34,.2);
+  box-shadow: inset 0 -1px 0 rgba(255, 68, 34, 0.2);
 }
 
 .latest-section-image {
@@ -835,7 +834,7 @@ main {
 
 .subtitle-links li {
   line-height: 18px;
-  margin-top: 11px
+  margin-top: 11px;
 }
 
 .subtitle-links li a::after {
@@ -871,11 +870,11 @@ main {
 }
 
 .latest-deals header a:hover {
-  color:black;
+  color: black;
 }
 
 .latest-deals ul {
-  margin:0;
+  margin: 0;
   margin-bottom: 20px;
   padding: 0;
   display: flex;
@@ -906,6 +905,7 @@ main {
   color: black;
   float: left;
 }
+
 .price-tag {
   float: left;
 }
@@ -914,7 +914,7 @@ main {
   text-decoration: line-through;
   margin-right: 4px;
   font-size: 12px;
-  color:rgb(170, 170, 170);
+  color: rgb(170, 170, 170);
 }
 
 .discount-tag {
@@ -1152,7 +1152,6 @@ main {
   .next-web-sections > section {
     flex-basis: 50%;
     max-width: 50%;
-    flex: 0 0 auto;
     padding: 10px;
     margin-bottom: 24px;
   }
@@ -1248,7 +1247,7 @@ main {
   }
 
   .nav-no-mob > li > a:hover {
-    color:black;
+    color: black;
   }
 
   .more-tnw-links > li:first-child > a {
@@ -1320,16 +1319,12 @@ main {
   .subtitle-links li:nth-last-child(1) a::after {
     display: none;
   }
-
-
 }
-
 /*
 ------------------------
      7 LG
 ------------------------
 */
-
 @media only screen and (min-width: 1024px) {
   /* 7.1 Header */
 
@@ -1416,7 +1411,7 @@ main {
   }
 
   .text-flex > h4 > a {
-    font-size : 16px;
+    font-size: 16px;
   }
 
   .text-flex > ul {
@@ -1470,16 +1465,12 @@ main {
   .latest-deals ul li {
     width: 25%;
   }
-
-
 }
-
 /*
 ------------------------
      8 XL
 ------------------------
 */
-
 @media only screen and (min-width: 1600px) {
   /* 8.3 Main Content */
 }
