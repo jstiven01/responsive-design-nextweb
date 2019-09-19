@@ -219,6 +219,17 @@ main {
   margin: 2px 0 2px;
 }
 
+.index-co ul > li > a > span {
+  color: #aaa;
+}
+
+.price-tag span:nth-child(1) {
+  text-decoration: line-through;
+  margin-right: 4px;
+  font-size: 12px;
+  color: rgb(170, 170, 170);
+}
+
 .nav-mob-toggle > div > span:first-child {
   margin: 0 0 2px;
 }
@@ -264,6 +275,16 @@ main {
   color: white;
 }
 
+.subtitle-links li a {
+  color: #f42;
+  text-decoration: none;
+  padding-right: 18px;
+}
+
+.subtitle-links li a:hover {
+  color: #000;
+}
+
 .main-article-wrapper header h2 {
   font-size: 20px;
 }
@@ -274,19 +295,63 @@ main {
   font-family: 'Paytone One', sans-serif;
 }
 
+.latest-section-header > h4 {
+  max-height: 56px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-size: 14px;
+  color: #f42;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.latest-section-header > h5 {
+  color: #f42;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.news-items > h4 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.index-co div > h4 {
+  font-size: 18px;
+}
+
+.index-co div > h5 {
+  opacity: 0.5;
+  font-size: 11px;
+}
+
 .main-section article header h5 {
   color: white;
   font-size: 14px;
 }
 
-.main-section article header ul {
-  font-size: 12px;
-  display: flex;
-  color: rgba(255, 255, 255, 0.6);
+.news-items > h4 > a {
+  display: block;
+  padding: 6px 0 6px 14px;
+  position: relative;
+  color: #555;
+}
+
+.news-items > h4 > a:hover {
+  color: #000;
 }
 
 .main-section article header ul a {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.latest-section-header > h4 > a:hover {
+  box-shadow: inset 0 -1px 0 rgba(255, 68, 34, 0.2);
 }
 
 .main-section article header ul a:hover {
@@ -458,8 +523,49 @@ main {
   margin-right: 13px;
 }
 
+.popular-author-time > li > a {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.popular-author-time > li > a:hover {
+  color: #fff;
+}
+
+.popular-headline > a:hover {
+  box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.3);
+}
+
+.invest {
+  padding: 16px;
+  font-size: 13px;
+  width: 100%;
+  color: #555;
+}
+
+.invest a {
+  margin-bottom: 0.5em;
+  display: flex;
+}
+
+.invest a i {
+  margin-right: 10px;
+  display: inline-block;
+}
+
 .text-flex > ul > li > a {
   color: #aaa;
+}
+
+.popular-author-time > li {
+  display: block;
+  float: left;
+}
+
+.popular-author-time > li:first-child::after {
+  content: "\B7";
+  display: block;
+  float: right;
+  margin: 0 4px;
 }
 
 .text-flex > ul > li:first-child::after {
@@ -494,6 +600,89 @@ main {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/iphone11-513x270.jpg');
 }
 
+.footer-links-company > li {
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0 4px;
+}
+
+.footer-links-company > li > a {
+  color: #aaa;
+}
+
+.footer-links-social > li > a {
+  background: #333;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  padding: 12px;
+  text-align: center;
+  width: 40px;
+}
+
+.footer-links-social > li {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+/* latest-deals */
+
+.latest-deals header {
+  display: flex;
+}
+
+.latest-deals header a {
+  margin-top: 11px;
+  margin-left: auto;
+  color: #f42;
+  text-decoration: none;
+}
+
+.latest-deals header a:hover {
+  color: black;
+}
+
+.latest-deals ul {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.subtitle-links li {
+  line-height: 18px;
+  margin-top: 11px;
+}
+
+.latest-deals ul li {
+  padding: 8px;
+  position: relative;
+  clear: both;
+}
+
+.latest-deals ul li > a {
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 8px;
+  margin-right: 16px;
+  float: left;
+  display: block;
+}
+
+.latest-deals h4 {
+  width: calc(100% - 92px);
+  color: black;
+  float: left;
+}
+
 .index-co {
   display: flex;
   flex-direction: column;
@@ -505,6 +694,14 @@ main {
   position: relative;
   margin: 12px 0;
   background: #fffaf8;
+}
+
+.index-co a > div {
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
+  color: #000;
+  background: rgba(255, 68, 34, 0.08);
+  width: 100%;
+  margin: 0;
 }
 
 .index-co > div:nth-last-child(1) {
@@ -532,48 +729,10 @@ main {
   text-overflow: ellipsis;
 }
 
-.index-co div > h4 {
-  font-size: 18px;
-}
-
-.index-co div > h5 {
-  opacity: 0.5;
-  font-size: 11px;
-}
-
-.index-co a > div {
-  padding: 10.6666666667px 16px 10.6666666667px 84px;
-  color: #000;
-  background: rgba(255, 68, 34, 0.08);
-  width: 100%;
-  margin: 0;
-}
-
 .index-co ul {
   margin-top: 0;
   padding: 16px;
   border-top: 1px solid rgba(255, 68, 34, 0.25);
-}
-
-.index-co ul > li > a > span {
-  color: #aaa;
-}
-
-.invest {
-  padding: 16px;
-  font-size: 13px;
-  width: 100%;
-  color: #555;
-}
-
-.invest a {
-  margin-bottom: 0.5em;
-  display: flex;
-}
-
-.invest a i {
-  margin-right: 10px;
-  display: inline-block;
 }
 
 .next-web-sections {
@@ -581,6 +740,12 @@ main {
   flex: 0 1 auto;
   flex-flow: row wrap;
   margin: -8px -8px 40px -8px;
+}
+
+.main-section article header ul {
+  font-size: 12px;
+  display: flex;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .next-web-sections > section {
@@ -647,35 +812,11 @@ main {
   color: #fff;
 }
 
-.popular-headline > a:hover {
-  box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.3);
-}
-
 .popular-author-time {
   color: hsla(0, 0%, 100%, 0.6);
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
-}
-
-.popular-author-time > li {
-  display: block;
-  float: left;
-}
-
-.popular-author-time > li:first-child::after {
-  content: "\B7";
-  display: block;
-  float: right;
-  margin: 0 4px;
-}
-
-.popular-author-time > li > a {
-  color: hsla(0, 0%, 100%, 0.6);
-}
-
-.popular-author-time > li > a:hover {
-  color: #fff;
 }
 
 .latest-section {
@@ -691,30 +832,6 @@ main {
   padding: 10px 14px 0;
 }
 
-.latest-section-header > h5 {
-  color: #f42;
-  font-size: 13px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
-}
-
-.latest-section-header > h4 {
-  max-height: 56px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-  font-size: 14px;
-  color: #f42;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.latest-section-header > h4 > a:hover {
-  box-shadow: inset 0 -1px 0 rgba(255, 68, 34, 0.2);
-}
-
 .latest-section-image {
   flex: 0 0 96px;
   background-color: #000;
@@ -728,12 +845,6 @@ main {
   border-bottom: 1px solid #eee;
 }
 
-.news-items > h4 {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
 .news-items > h4 > a::before {
   background-color: #f42;
   border-radius: 50%;
@@ -744,17 +855,6 @@ main {
   position: absolute;
   top: 13px;
   width: 4px;
-}
-
-.news-items > h4 > a {
-  display: block;
-  padding: 6px 0 6px 14px;
-  position: relative;
-  color: #555;
-}
-
-.news-items > h4 > a:hover {
-  color: #000;
 }
 
 #background-sections-1 {
@@ -832,11 +932,6 @@ main {
   flex-direction: column;
 }
 
-.subtitle-links li {
-  line-height: 18px;
-  margin-top: 11px;
-}
-
 .subtitle-links li a::after {
   content: "|";
   margin-left: 10px;
@@ -846,75 +941,8 @@ main {
   position: absolute;
 }
 
-.subtitle-links li a {
-  color: #f42;
-  text-decoration: none;
-  padding-right: 18px;
-}
-
-.subtitle-links li a:hover {
-  color: #000;
-}
-
-/* latest-deals */
-
-.latest-deals header {
-  display: flex;
-}
-
-.latest-deals header a {
-  margin-top: 11px;
-  margin-left: auto;
-  color: #f42;
-  text-decoration: none;
-}
-
-.latest-deals header a:hover {
-  color: black;
-}
-
-.latest-deals ul {
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.latest-deals ul li {
-  padding: 8px;
-  position: relative;
-  clear: both;
-}
-
-.latest-deals ul li > a {
-  width: 75px;
-  height: 75px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 8px;
-  margin-right: 16px;
-  float: left;
-  display: block;
-}
-
-.latest-deals h4 {
-  width: calc(100% - 92px);
-  color: black;
-  float: left;
-}
-
 .price-tag {
   float: left;
-}
-
-.price-tag span:nth-child(1) {
-  text-decoration: line-through;
-  margin-right: 4px;
-  font-size: 12px;
-  color: rgb(170, 170, 170);
 }
 
 .discount-tag {
@@ -955,36 +983,8 @@ main {
   background-position: -576px -576px;
 }
 
-.footer-links-social > li > a {
-  background: #333;
-  border-radius: 50%;
-  display: block;
-  height: 40px;
-  padding: 12px;
-  text-align: center;
-  width: 40px;
-}
-
-.footer-links-social > li {
-  display: inline-block;
-  margin: 0 3px;
-}
-
 .footer-links-social {
   margin-bottom: 1.5em;
-}
-
-.footer-links-company > li > a {
-  color: #aaa;
-}
-
-.footer-links-company > li {
-  font-weight: 500;
-  text-transform: uppercase;
-  display: inline-block;
-  font-size: 13px;
-  line-height: 24px;
-  margin: 0 4px;
 }
 
 .wrapper-links-social {
@@ -1141,6 +1141,23 @@ main {
     margin-right: 24px;
   }
 
+  .link-navbar-hardfork > div {
+    padding-left: 126px;
+    text-align: left;
+  }
+
+  .discount-tag div {
+    transform: rotate(45deg);
+    font-size: 14px;
+    font-weight: 700;
+    left: 8px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+    width: 100%;
+  }
+
   .index-co > div:nth-last-child(2) {
     margin-right: 0;
   }
@@ -1166,16 +1183,6 @@ main {
     flex-wrap: wrap;
   }
 
-  .latest-deals ul li {
-    width: 33.333%;
-  }
-
-  .latest-deals ul li > a {
-    background-position: 0 100%;
-    padding-top: 74.5%;
-    width: 100%;
-  }
-
   .latest-deals h4 {
     width: 100%;
   }
@@ -1196,18 +1203,6 @@ main {
     z-index: 10;
   }
 
-  .discount-tag div {
-    transform: rotate(45deg);
-    font-size: 14px;
-    font-weight: 700;
-    left: 8px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    top: 20px;
-    width: 100%;
-  }
-
   /* 6.4 Footer */
 
   .footer-links-social > li {
@@ -1222,16 +1217,12 @@ main {
     margin-left: 12px;
   }
 
+  .latest-deals ul li {
+    width: 33.333%;
+  }
+
   .more-tnw-links > li:first-child {
     margin-left: 20px;
-  }
-
-  .more-tnw-links > li > a {
-    color: hsla(0, 0%, 100%, 0.6);
-  }
-
-  .more-tnw-links > li > a:hover {
-    color: white;
   }
 
   .nav-no-mob > li > a {
@@ -1244,6 +1235,20 @@ main {
     letter-spacing: 0.04em;
     line-height: 1;
     font-size: 12.5px;
+  }
+
+  .more-tnw-links > li > a {
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+
+  .latest-deals ul li > a {
+    background-position: 0 100%;
+    padding-top: 74.5%;
+    width: 100%;
+  }
+
+  .more-tnw-links > li > a:hover {
+    color: white;
   }
 
   .nav-no-mob > li > a:hover {
@@ -1287,11 +1292,6 @@ main {
     opacity: 0.5;
   }
 
-  .link-navbar-hardfork > div {
-    padding-left: 126px;
-    text-align: left;
-  }
-
   .wrapper-legal > span {
     display: inline;
   }
@@ -1320,6 +1320,7 @@ main {
     display: none;
   }
 }
+
 /*
 ------------------------
      7 LG
@@ -1343,6 +1344,10 @@ main {
 
   .company-links > li > a {
     color: hsla(0, 0%, 100%, 0.6);
+  }
+
+  .text-flex > h4 > a {
+    font-size: 16px;
   }
 
   .company-links > li > a:hover {
@@ -1410,10 +1415,6 @@ main {
     padding: 12px;
   }
 
-  .text-flex > h4 > a {
-    font-size: 16px;
-  }
-
   .text-flex > ul {
     font-size: 13px;
   }
@@ -1466,6 +1467,7 @@ main {
     width: 25%;
   }
 }
+
 /*
 ------------------------
      8 XL
