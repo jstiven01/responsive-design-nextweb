@@ -164,9 +164,92 @@ main {
   border-left: 1px solid #eee;
 }
 
+.invest a {
+  margin-bottom: 0.5em;
+  display: flex;
+}
+
+.subtitle-text > a {
+  color: #f42;
+  font-weight: 700;
+}
+
 .text-flex > h4 > a {
   color: #000;
   text-decoration: none;
+}
+
+.latest-deals header a {
+  margin-top: 11px;
+  margin-left: auto;
+  color: #f42;
+  text-decoration: none;
+}
+
+.footer-links-social > li > a {
+  background: #333;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  padding: 12px;
+  text-align: center;
+  width: 40px;
+}
+
+.footer-links-company > li > a {
+  color: #aaa;
+}
+
+.popular-author-time > li > a {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.news-items > h4 > a {
+  display: block;
+  padding: 6px 0 6px 14px;
+  position: relative;
+  color: #555;
+}
+
+.subtitle-links li a {
+  color: #f42;
+  text-decoration: none;
+  padding-right: 18px;
+}
+
+.nav-mob > li > a {
+  display: block;
+  height: 48px;
+  padding: 16px;
+  width: 48px;
+}
+
+.latest-deals ul li > a {
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 8px;
+  margin-right: 16px;
+  float: left;
+  display: block;
+}
+
+.text-flex > ul > li > a {
+  color: #aaa;
+}
+
+.main-section article header ul a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.popular-headline > a:hover {
+  box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.3);
+}
+
+.subtitle-text > a:hover {
+  color: black;
+  font-weight: 700;
 }
 
 .text-flex > h4 > a:hover {
@@ -182,25 +265,28 @@ main {
   padding-top: 4px;
 }
 
+.latest-deals header a:hover {
+  color: black;
+}
+
+.popular-author-time > li > a:hover {
+  color: #fff;
+}
+
+.latest-section-header > h4 > a:hover {
+  box-shadow: inset 0 -1px 0 rgba(255, 68, 34, 0.2);
+}
+
+.news-items > h4 > a:hover {
+  color: #000;
+}
+
+.subtitle-links li a:hover {
+  color: #000;
+}
+
 .text-flex > ul > li > a:hover {
   color: #555;
-}
-
-.subtitle-text > a {
-  color: #f42;
-  font-weight: 700;
-}
-
-.subtitle-text > a:hover {
-  color: black;
-  font-weight: 700;
-}
-
-.nav-mob > li > a {
-  display: block;
-  height: 48px;
-  padding: 16px;
-  width: 48px;
 }
 
 .toggle-icon {
@@ -268,21 +354,15 @@ main {
   box-sizing: border-box;
 }
 
+.latest-deals header {
+  display: flex;
+}
+
 .main-section article header {
   position: absolute;
   padding-left: 10px;
   bottom: 10px;
   color: white;
-}
-
-.subtitle-links li a {
-  color: #f42;
-  text-decoration: none;
-  padding-right: 18px;
-}
-
-.subtitle-links li a:hover {
-  color: #000;
 }
 
 .main-article-wrapper header h2 {
@@ -321,6 +401,21 @@ main {
   line-height: 1.5;
 }
 
+.latest-deals h4 {
+  width: calc(100% - 92px);
+  color: black;
+  float: left;
+}
+
+.text-flex > h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 1px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
 .index-co div > h4 {
   font-size: 18px;
 }
@@ -335,27 +430,13 @@ main {
   font-size: 14px;
 }
 
-.news-items > h4 > a {
-  display: block;
-  padding: 6px 0 6px 14px;
-  position: relative;
-  color: #555;
-}
-
-.news-items > h4 > a:hover {
-  color: #000;
-}
-
-.main-section article header ul a {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.latest-section-header > h4 > a:hover {
-  box-shadow: inset 0 -1px 0 rgba(255, 68, 34, 0.2);
-}
-
 .main-section article header ul a:hover {
   color: white;
+}
+
+.invest a i {
+  margin-right: 10px;
+  display: inline-block;
 }
 
 .main-section article header i {
@@ -523,37 +604,11 @@ main {
   margin-right: 13px;
 }
 
-.popular-author-time > li > a {
-  color: hsla(0, 0%, 100%, 0.6);
-}
-
-.popular-author-time > li > a:hover {
-  color: #fff;
-}
-
-.popular-headline > a:hover {
-  box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.3);
-}
-
 .invest {
   padding: 16px;
   font-size: 13px;
   width: 100%;
   color: #555;
-}
-
-.invest a {
-  margin-bottom: 0.5em;
-  display: flex;
-}
-
-.invest a i {
-  margin-right: 10px;
-  display: inline-block;
-}
-
-.text-flex > ul > li > a {
-  color: #aaa;
 }
 
 .popular-author-time > li {
@@ -573,15 +628,6 @@ main {
   display: block;
   float: right;
   margin: 0 4px;
-}
-
-.text-flex > h4 {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 18px;
-  margin-bottom: 1px;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
 }
 
 #background-apple-special-1 {
@@ -609,40 +655,9 @@ main {
   margin: 0 4px;
 }
 
-.footer-links-company > li > a {
-  color: #aaa;
-}
-
-.footer-links-social > li > a {
-  background: #333;
-  border-radius: 50%;
-  display: block;
-  height: 40px;
-  padding: 12px;
-  text-align: center;
-  width: 40px;
-}
-
 .footer-links-social > li {
   display: inline-block;
   margin: 0 3px;
-}
-
-/* latest-deals */
-
-.latest-deals header {
-  display: flex;
-}
-
-.latest-deals header a {
-  margin-top: 11px;
-  margin-left: auto;
-  color: #f42;
-  text-decoration: none;
-}
-
-.latest-deals header a:hover {
-  color: black;
 }
 
 .latest-deals ul {
@@ -664,23 +679,6 @@ main {
   padding: 8px;
   position: relative;
   clear: both;
-}
-
-.latest-deals ul li > a {
-  width: 75px;
-  height: 75px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 8px;
-  margin-right: 16px;
-  float: left;
-  display: block;
-}
-
-.latest-deals h4 {
-  width: calc(100% - 92px);
-  color: black;
-  float: left;
 }
 
 .index-co {
