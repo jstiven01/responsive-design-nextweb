@@ -5,7 +5,7 @@ This project consists of replicating the The Next Web website putting emphasis o
 
 ## Live Version:
 
-You can check the live version 
+You can check the live version [here](https://raw.githack.com/jstiven01/responsive-design-nextweb/next-web-page/index.html)
 
 ## Source Page:
 
@@ -19,4 +19,15 @@ HTML5 CSS3, using Grid, Flexbox, Floats and media querys CSS.
 Luis Preza https://github.com/men32z <br>
 Johan Tinjaca https://github.com/jstiven01
 
-## Screenshot
+## Screenshots
+
+### Mobile
+![mobile screenshot](https://raw.githubusercontent.com/jstiven01/responsive-design-nextweb/next-web-page/assets/screenshots/ScreenshotMobile.png)
+
+### Medium size
+![medium screenshot](https://raw.githubusercontent.com/jstiven01/responsive-design-nextweb/next-web-page/assets/screenshots/ScreenshotMedium.png)
+
+### Desktop
+![desktop_main screenshot](https://raw.githubusercontent.com/jstiven01/responsive-design-nextweb/next-web-page/assets/screenshots/desktop_1.png)
+![desktop_content screenshot](https://raw.githubusercontent.com/jstiven01/responsive-design-nextweb/next-web-page/assets/screenshots/desktop_2.png)
+![desktop_footer screenshot](https://raw.githubusercontent.com/jstiven01/responsive-design-nextweb/next-web-page/assets/screenshots/desktop_3.png)
