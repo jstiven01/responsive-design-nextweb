@@ -5,7 +5,7 @@ This project consists of replicating the The Next Web website putting emphasis o
 
 ## Live Version:
 
-You can check the live version [here](https://raw.githack.com/jstiven01/responsive-design-nextweb/next-web-page/index.html)
+You can check the live version [here](https://jstiven01.github.io/responsive-design-nextweb/index.html)
 
 ## Source Page:
 
