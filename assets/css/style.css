@@ -1,0 +1,1497 @@
+/*
+  1 General
+
+  2 Header
+
+  3 Main Content
+
+  4 Footer
+
+  5 Media Querys SM 480
+    5.1 General
+    5.2 Header
+    5.3 Main Content
+    5.4 Footer
+
+  6 Media Querys MD 768
+    6.1 General
+    6.2 Header
+    6.3 Main Content
+    6.4 Footer
+
+  7 Media Querys LG 1024
+    7.1 General
+    7.2 Header
+    7.3 Main Content
+    7.4 Footer
+
+  8 Media Querys XL 1600
+    8.1 General
+    8.2 Header
+    8.3 Main Content
+    8.4 Footer
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap'); /* font-family: 'Paytone One', sans-serif; */
+
+/*
+------------------------
+     1  General
+------------------------
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555;
+  line-height: 1.5;
+  min-height: 100vh;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  border: 0;
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+main {
+  height: auto;
+  padding-top: 104px;
+}
+
+.col-md-8 {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.col-md-4 {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) no-repeat;
+  background-size: 1296px 1296px;
+  background-position: 1296px 1296px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon.icon--share--light {
+  background-position: -912px -912px;
+}
+
+.icon.icon--clock--light {
+  background-position: -160px -160px;
+}
+
+.icon--briefcase--dark {
+  background-position: -48px -48px;
+}
+
+/*
+------------------------
+      2 Header
+------------------------
+*/
+
+.nav {
+  height: 48px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+}
+
+.nav-logo > a {
+  z-index: 2;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  display: block;
+  height: 48px;
+  padding: 16px 20px;
+  width: 106px;
+}
+
+.nav-logo > a > img {
+  display: block;
+  height: 16px;
+  width: 66px;
+  z-index: 999;
+}
+
+.links-navbar-no-mob {
+  display: none;
+}
+
+.search-icon {
+  background-position: -848px -848px;
+}
+
+.icon--tag--dark {
+  background-position: -976px -976px;
+}
+
+.nav-mob {
+  display: flex;
+}
+
+.nav-mob > li {
+  border-left: 1px solid #eee;
+}
+
+.invest a {
+  margin-bottom: 0.5em;
+  display: flex;
+}
+
+.subtitle-text > a {
+  color: #f42;
+  font-weight: 700;
+}
+
+.text-flex > h4 > a {
+  color: #000;
+  text-decoration: none;
+}
+
+.latest-deals header a {
+  margin-top: 11px;
+  margin-left: auto;
+  color: #f42;
+  text-decoration: none;
+}
+
+.footer-links-social > li > a {
+  background: #333;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  padding: 12px;
+  text-align: center;
+  width: 40px;
+}
+
+.footer-links-company > li > a {
+  color: #aaa;
+}
+
+.popular-author-time > li > a {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.news-items > h4 > a {
+  display: block;
+  padding: 6px 0 6px 14px;
+  position: relative;
+  color: #555;
+}
+
+.subtitle-links li a {
+  color: #f42;
+  text-decoration: none;
+  padding-right: 18px;
+}
+
+.nav-mob > li > a {
+  display: block;
+  height: 48px;
+  padding: 16px;
+  width: 48px;
+}
+
+.latest-deals ul li > a {
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 8px;
+  margin-right: 16px;
+  float: left;
+  display: block;
+}
+
+.text-flex > ul > li > a {
+  color: #aaa;
+}
+
+.main-section article header ul a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.popular-headline > a:hover {
+  box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.3);
+}
+
+.subtitle-text > a:hover {
+  color: black;
+  font-weight: 700;
+}
+
+.text-flex > h4 > a:hover {
+  box-shadow: inset 0 -1px 0 rgba(255, 68, 34, 0.25);
+  color: #f42;
+}
+
+.text-flex > ul {
+  display: flex;
+  line-height: 18px;
+  color: #aaa;
+  font-size: 12px;
+  padding-top: 4px;
+}
+
+.latest-deals header a:hover {
+  color: black;
+}
+
+.popular-author-time > li > a:hover {
+  color: #fff;
+}
+
+.latest-section-header > h4 > a:hover {
+  box-shadow: inset 0 -1px 0 rgba(255, 68, 34, 0.2);
+}
+
+.news-items > h4 > a:hover {
+  color: #000;
+}
+
+.subtitle-links li a:hover {
+  color: #000;
+}
+
+.text-flex > ul > li > a:hover {
+  color: #555;
+}
+
+.toggle-icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-legal > span {
+  display: block;
+}
+
+.nav-mob-toggle > div > span {
+  background-color: #f42;
+  height: 2px;
+  width: 16px;
+  margin: 2px 0 2px;
+}
+
+.index-co ul > li > a > span {
+  color: #aaa;
+}
+
+.price-tag span:nth-child(1) {
+  text-decoration: line-through;
+  margin-right: 4px;
+  font-size: 12px;
+  color: rgb(170, 170, 170);
+}
+
+.nav-mob-toggle > div > span:first-child {
+  margin: 0 0 2px;
+}
+
+.wrapper-top-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-navbar-hardfork > div {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+  line-height: 30px;
+  background: #fd3;
+  font-size: 10px;
+  color: #000;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*
+------------------------
+      3 Main Content
+------------------------
+*/
+
+.main-section {
+  height: auto;
+  overflow: auto;
+}
+
+.main-section article {
+  height: 30vh;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.latest-deals header {
+  display: flex;
+}
+
+.main-section article header {
+  position: absolute;
+  padding-left: 10px;
+  bottom: 10px;
+  color: white;
+}
+
+.main-article-wrapper header h2 {
+  font-size: 20px;
+}
+
+.main-section article header h2 {
+  color: white;
+  cursor: pointer;
+  font-family: 'Paytone One', sans-serif;
+}
+
+.latest-section-header > h4 {
+  max-height: 56px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-size: 14px;
+  color: #f42;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.latest-section-header > h5 {
+  color: #f42;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.news-items > h4 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.latest-deals h4 {
+  width: calc(100% - 92px);
+  color: black;
+  float: left;
+}
+
+.text-flex > h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 1px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.index-co div > h4 {
+  font-size: 18px;
+}
+
+.index-co div > h5 {
+  opacity: 0.5;
+  font-size: 11px;
+}
+
+.main-section article header h5 {
+  color: white;
+  font-size: 14px;
+}
+
+.main-section article header ul a:hover {
+  color: white;
+}
+
+.invest a i {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.main-section article header i {
+  display: inline-block;
+  margin: 0 2px 0 6px;
+  vertical-align: middle;
+  opacity: 0.6;
+}
+
+.main-article {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/OnePlus-tv-hed-796x419.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.main-article-2 {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Untitled-design-23-796x417.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.main-article-3 {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Untitled-design-32-796x417.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.cover-trigger {
+  background: rgba(0, 0, 0, 0.25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  margin-top: calc(-30vh + 8px);
+}
+
+.cover-gradient {
+  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png) no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  display: none;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  margin-top: -75vh;
+}
+
+.main-date {
+  position: absolute;
+  display: none;
+  top: 16px;
+  right: 24px;
+  color: white;
+}
+
+.cover-logo {
+  display: none;
+  position: absolute;
+  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg) no-repeat;
+  background-size: contain;
+  left: 24px;
+  width: 50%;
+  height: 100%;
+  max-height: 112px;
+  line-height: 1;
+  top: 24px;
+  pointer-events: none;
+  text-align: right;
+}
+
+#background-latest-1 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/sale_21924_primary_image_wide-540x270.jpg');
+}
+
+#background-latest-2 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/simjacker-attack-hed-480x270.jpg');
+}
+
+#background-latest-3 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/france-cryptocurrency-bitcoin-libra-facebook-516x270.jpg');
+}
+
+#background-latest-4 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Learning-AI-Programming-405x270.jpg');
+}
+
+#background-latest-5 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/app-store-apple-hed-522x270.png');
+}
+
+#background-latest-6 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/firefox-hed-516x270.png');
+}
+
+#background-latest-7 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Slack-Dark-Mode-514x270.jpg');
+}
+
+#background-latest-8 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Snag_3e3a4e3-504x270.png');
+}
+
+.wrapper-outside {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
+}
+
+.latest {
+  margin: 30px 0 2em 0;
+  padding-top: 24px;
+}
+
+.subtitle-text {
+  margin-bottom: 24px;
+  line-height: 1.1;
+  font-size: 28px;
+  letter-spacing: -0.015em;
+}
+
+.group-news {
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
+  margin: -8px;
+}
+
+.group-news > li {
+  flex-basis: 100%;
+  max-width: 100%;
+  padding: 8px;
+}
+
+.div-story {
+  min-height: 72px;
+  display: flex;
+}
+
+.story-image {
+  width: 75px;
+  background-color: #000;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 8px;
+  position: relative;
+  height: 100%;
+}
+
+.image-flex {
+  width: 75px;
+  height: 75px;
+  margin-right: 13px;
+}
+
+.invest {
+  padding: 16px;
+  font-size: 13px;
+  width: 100%;
+  color: #555;
+}
+
+.popular-author-time > li {
+  display: block;
+  float: left;
+}
+
+.popular-author-time > li:first-child::after {
+  content: "\B7";
+  display: block;
+  float: right;
+  margin: 0 4px;
+}
+
+.text-flex > ul > li:first-child::after {
+  content: "\B7";
+  display: block;
+  float: right;
+  margin: 0 4px;
+}
+
+#background-apple-special-1 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/iPhone-11-Pro-Tim-Cook-513x270.jpg');
+}
+
+#background-apple-special-2 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/iPhone-Pro-lineup-514x270.jpg');
+}
+
+#background-apple-special-3 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/iPhone-11-pricing-513x270.jpg');
+}
+
+#background-apple-special-4 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/iphone11-513x270.jpg');
+}
+
+.footer-links-company > li {
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0 4px;
+}
+
+.footer-links-social > li {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.latest-deals ul {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.subtitle-links li {
+  line-height: 18px;
+  margin-top: 11px;
+}
+
+.latest-deals ul li {
+  padding: 8px;
+  position: relative;
+  clear: both;
+}
+
+.index-co {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.index-co > div {
+  width: 100%;
+  position: relative;
+  margin: 12px 0;
+  background: #fffaf8;
+}
+
+.index-co a > div {
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
+  color: #000;
+  background: rgba(255, 68, 34, 0.08);
+  width: 100%;
+  margin: 0;
+}
+
+.index-co > div:nth-last-child(1) {
+  display: none;
+}
+
+.index-co div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10.7px;
+  height: 60px;
+  width: 60px;
+  z-index: 100;
+}
+
+.index-co a > h4 {
+  background: #f42;
+  color: #fff;
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
+  margin: 0;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.index-co ul {
+  margin-top: 0;
+  padding: 16px;
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+}
+
+.next-web-sections {
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
+  margin: -8px -8px 40px -8px;
+}
+
+.main-section article header ul {
+  font-size: 12px;
+  display: flex;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.next-web-sections > section {
+  max-width: 100%;
+  flex: 0 0 100%;
+  padding: 8px;
+  position: relative;
+}
+
+.section-popular {
+  height: 0;
+  padding-top: 75%;
+  position: relative;
+  width: 100%;
+}
+
+.popular-image {
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.popular-gradient {
+  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png') no-repeat;
+  background-size: 100% 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.popular-header {
+  bottom: 0;
+  left: 0;
+  padding: 14px;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+
+.most-popular {
+  color: #fff;
+  font-size: 13px;
+  pointer-events: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.popular-headline {
+  margin-bottom: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.popular-author-time {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.latest-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 68, 34, 0.06);
+  margin: 2px 0;
+}
+
+.latest-section-header {
+  flex: 1;
+  overflow: hidden;
+  padding: 10px 14px 0;
+}
+
+.latest-section-image {
+  flex: 0 0 96px;
+  background-color: #000;
+  background-position: 50%;
+  background-size: cover;
+  height: 96px;
+  width: 96px;
+}
+
+.news-items {
+  border-bottom: 1px solid #eee;
+}
+
+.news-items > h4 > a::before {
+  background-color: #f42;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 13px;
+  width: 4px;
+}
+
+#background-sections-1 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Apple-Arcade-1-368x276.jpg');
+}
+
+#background-sections-2 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/OnePlus-7-Pro-1-of-4-368x276.jpg');
+}
+
+#background-sections-3 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/pic-368x276.png');
+}
+
+#background-sections-4 {
+  background-image: url('https://i.ytimg.com/vi/Z1jgaEO9aRs/hqdefault.jpg');
+}
+
+#background-sections-5 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/download25-368x276.png');
+}
+
+#background-sections-6 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Untitled-1-368x276.jpg');
+}
+
+#background-sections-7 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Pam-Angela-The-Office-368x276.jpg');
+}
+
+#background-sections-8 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/lootbox-368x276.jpg');
+}
+
+#background-sections-latest-1 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/moviepass.png');
+}
+
+#background-sections-latest-2 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/oneplus-7-7-pro-cheap.jpg');
+}
+
+#background-sections-latest-3 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/04/cloudcomputing-730x348.jpg');
+}
+
+#background-sections-latest-4 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/chineseverticalB1200.png');
+}
+
+#background-sections-latest-5 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Nour-and-her-plane.jpg');
+}
+
+#background-sections-latest-6 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/deloitte.jpg');
+}
+
+#background-sections-latest-7 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Orion-Doom-Bethesda-hed.jpg');
+}
+
+#background-sections-latest-8 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/pong.jpg');
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle-links li a::after {
+  content: "|";
+  margin-left: 10px;
+  margin-right: 10px;
+  display: none;
+  pointer-events: none;
+  position: absolute;
+}
+
+.price-tag {
+  float: left;
+}
+
+.discount-tag {
+  display: none;
+}
+
+/*
+------------------------
+      4 Footer
+------------------------
+*/
+
+.facebook-icon {
+  background-position: -272px -272px;
+}
+
+.twitter-icon {
+  background-position: -1024px -1024px;
+}
+
+.youtube-icon {
+  background-position: -1280px -1280px;
+}
+
+.instagram-icon {
+  background-position: -416px -416px;
+}
+
+.pinterest-icon {
+  background-position: -672px -672px;
+}
+
+.rss-icon {
+  background-position: -816px -816px;
+}
+
+.mail-icon {
+  background-position: -576px -576px;
+}
+
+.footer-links-social {
+  margin-bottom: 1.5em;
+}
+
+.wrapper-links-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  background: #131313;
+  padding: 2.5em 0;
+}
+
+.footer-legal {
+  background: #000;
+  color: #aaa;
+  font-size: 13px;
+  padding: 2.5em 0;
+}
+
+.footer-logos {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+  vertical-align: baseline;
+}
+
+.wrapper-legal > span > b {
+  color: #f42;
+}
+
+.wrapper-legal {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/*
+------------------------
+     5 SM
+------------------------
+*/
+
+@media only screen and (min-width: 480px) {
+  /* 5.1 Header */
+  .link-navbar-hardfork > div {
+    font-size: 13px;
+  }
+}
+
+/*
+------------------------
+     6 MD
+------------------------
+*/
+
+@media only screen and (min-width: 768px) {
+  /* 6.2 Header */
+
+  .wrapper-top-nav {
+    justify-content: flex-start;
+  }
+
+  .nav-logo > a {
+    height: 80px;
+  }
+
+  .nav-logo > a > img {
+    transform: translateY(16px);
+  }
+
+  .nav-mob {
+    display: none;
+  }
+
+  .links-navbar-no-mob {
+    display: unset;
+    width: 100%;
+  }
+
+  .company-links {
+    display: none;
+  }
+
+  .nav-no-mob {
+    display: flex;
+    height: 100%;
+  }
+
+  /* 6.3 Main Content */
+
+  .col-md-8 {
+    width: 66.66666%;
+  }
+
+  .col-md-4 {
+    width: 33.33333%;
+  }
+
+  .main-section article:nth-last-child(1),
+  .main-section article:nth-last-child(2) {
+    height: 25vh;
+  }
+
+  .main-section {
+    height: 50vh;
+  }
+
+  .main-section .col-md-8 {
+    height: 100%;
+  }
+
+  .cover-trigger {
+    margin-top: calc(-25vh + 8px);
+  }
+
+  .main-article-wrapper .cover-trigger {
+    margin-top: calc(-50vh + 8px);
+  }
+
+  .group-news {
+    margin: -10px;
+  }
+
+  .group-news > li {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+    padding: 10px;
+  }
+
+  .div-story {
+    flex-direction: column;
+  }
+
+  .story-image {
+    width: 100%;
+    padding-top: 50%;
+  }
+
+  .image-flex {
+    width: 100%;
+    margin-right: 0;
+    height: auto;
+  }
+
+  .index-co {
+    flex-direction: row;
+    margin-bottom: 42px;
+  }
+
+  .index-co > div {
+    width: calc(33.333% - 16px);
+    margin-right: 24px;
+  }
+
+  .link-navbar-hardfork > div {
+    padding-left: 126px;
+    text-align: left;
+  }
+
+  .discount-tag div {
+    transform: rotate(45deg);
+    font-size: 14px;
+    font-weight: 700;
+    left: 8px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+    width: 100%;
+  }
+
+  .index-co > div:nth-last-child(2) {
+    margin-right: 0;
+  }
+
+  .next-web-sections {
+    margin: -10px -10px 40px -10px;
+  }
+
+  .next-web-sections > section {
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 10px;
+    margin-bottom: 24px;
+  }
+
+  .latest-deals header > a {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .latest-deals ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .latest-deals h4 {
+    width: 100%;
+  }
+
+  .discount-tag {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #000;
+    display: block;
+    height: 80px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 80px;
+    z-index: 10;
+  }
+
+  /* 6.4 Footer */
+
+  .footer-links-social > li {
+    margin: 0 8px;
+  }
+
+  .footer-links-company > li {
+    margin: 0 6px;
+  }
+
+  .more-tnw-links > li {
+    margin-left: 12px;
+  }
+
+  .latest-deals ul li {
+    width: 33.333%;
+  }
+
+  .more-tnw-links > li:first-child {
+    margin-left: 20px;
+  }
+
+  .nav-no-mob > li > a {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #aaa;
+    display: block;
+    height: 48px;
+    padding: 18px 10px 0;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    font-size: 12.5px;
+  }
+
+  .more-tnw-links > li > a {
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+
+  .latest-deals ul li > a {
+    background-position: 0 100%;
+    padding-top: 74.5%;
+    width: 100%;
+  }
+
+  .more-tnw-links > li > a:hover {
+    color: white;
+  }
+
+  .nav-no-mob > li > a:hover {
+    color: black;
+  }
+
+  .more-tnw-links > li:first-child > a {
+    color: #fff;
+  }
+
+  .more-tnw-links {
+    max-height: 32px;
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 32px;
+    background: #131313;
+    z-index: 2;
+  }
+
+  .additional-topics-links {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  .nav-no-mob > li:first-child a {
+    padding-left: 20px;
+  }
+
+  .search-icon-no-mob {
+    padding: 18px 20px 0;
+    border-left: 1px solid #eee;
+  }
+
+  .search-icon-no-mob a i {
+    opacity: 0.25;
+  }
+
+  .search-icon-no-mob a:hover i {
+    opacity: 0.5;
+  }
+
+  .wrapper-legal > span {
+    display: inline;
+  }
+
+  .footer-legal {
+    padding: 3em 0;
+  }
+
+  .footer-links {
+    padding: 3em 0 2em;
+  }
+
+  .main-article-wrapper header h2 {
+    font-size: 36px;
+  }
+
+  .subtitle-links {
+    flex-direction: row;
+  }
+
+  .subtitle-links li a::after {
+    display: inline-block;
+  }
+
+  .subtitle-links li:nth-last-child(1) a::after {
+    display: none;
+  }
+}
+
+/*
+------------------------
+     7 LG
+------------------------
+*/
+@media only screen and (min-width: 1024px) {
+  /* 7.1 Header */
+
+  .nav-logo {
+    display: none;
+  }
+
+  .company-links {
+    display: flex;
+    padding-right: 20px;
+  }
+
+  .company-links > li {
+    margin-left: 12px;
+  }
+
+  .company-links > li > a {
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+
+  .text-flex > h4 > a {
+    font-size: 16px;
+  }
+
+  .company-links > li > a:hover {
+    color: white;
+  }
+
+  .wrapper-black-nav {
+    display: flex;
+    max-height: 32px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 32px;
+    background: #131313;
+    z-index: 2;
+    justify-content: space-between;
+  }
+
+  .link-navbar-hardfork > div {
+    padding-left: 20px;
+  }
+
+  /* 7.3 Main Content */
+
+  .main-section {
+    height: 68vh;
+  }
+
+  .main-section article:nth-last-child(1),
+  .main-section article:nth-last-child(2) {
+    height: 34vh;
+  }
+
+  .cover-gradient {
+    display: block;
+  }
+
+  .cover-trigger {
+    margin-top: calc(-34vh + 8px);
+  }
+
+  .main-article-wrapper .cover-trigger {
+    margin-top: calc(-68vh + 8px);
+  }
+
+  .cover-logo {
+    display: block;
+  }
+
+  .main-article-wrapper header h2 {
+    font-size: 46px;
+  }
+
+  .main-date {
+    display: block;
+  }
+
+  .group-news {
+    margin: -12px;
+    font-size: 16px;
+  }
+
+  .group-news > li {
+    flex-basis: 25%;
+    max-width: 25%;
+    padding: 12px;
+  }
+
+  .text-flex > ul {
+    font-size: 13px;
+  }
+
+  .index-co {
+    margin-bottom: 56px;
+  }
+
+  .index-co > div {
+    width: calc(25% - 18px);
+  }
+
+  .index-co > div:nth-last-child(1) {
+    display: block;
+    margin-right: 0;
+  }
+
+  .index-co > div:nth-last-child(2) {
+    margin-right: 24px;
+  }
+
+  .subtitle-links {
+    flex-direction: row-reverse;
+    margin-left: auto;
+  }
+
+  .subtitle-links li:nth-last-child(1) a::after {
+    display: inline-block;
+  }
+
+  .subtitle-links li:nth-child(1) a::after {
+    display: none;
+  }
+
+  .header-wrapper {
+    flex-direction: row;
+  }
+
+  .next-web-sections {
+    margin: -12px -12px 40px -12px;
+  }
+
+  .next-web-sections > section {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+    padding: 12px;
+  }
+
+  .latest-deals ul li {
+    width: 25%;
+  }
+}
+
+/*
+------------------------
+     8 XL
+------------------------
+*/
+@media only screen and (min-width: 1600px) {
+  /* 8.3 Main Content */
+  .cover-logo {
+    background-size: contain;
+    height: 96px;
+  }
+
+  .main-section {
+    height: 60vh;
+  }
+
+  .main-section article:nth-last-child(1),
+  .main-section article:nth-last-child(2) {
+    height: 30vh;
+  }
+
+  .cover-trigger {
+    margin-top: calc(-30vh + 8px);
+  }
+
+  .main-article-wrapper .cover-trigger {
+    margin-top: calc(-60vh + 8px);
+  }
+}
